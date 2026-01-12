@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
+    
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAQxuZsVlNT6hNR5s1-64PWU25dA8TgPDXjH9sYhjiN3Euyx6dwI7DrdueKFeYqXOdfbeCcNqJi-L5-tI&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+  </script>
+    
     <meta charset="UTF-8">
     <title>Meine TechWebsite</title>
     <style>
@@ -62,7 +67,13 @@
         
         <h1>Moin! 👋</h1>
         <p>Willkommen auf meiner persönlichen Seite. Ich teste gerade, wie man Webseiten baut.</p>
-        
+
+    <div id="paypal-container-K4ZPFRLA3N8GL"></div>
+       <script>
+         paypal.HostedButtons({
+         hostedButtonId: "K4ZPFRLA3N8GL",
+         }).render("#paypal-container-K4ZPFRLA3N8GL")
+       </script>
     </div>
 
     <div class="container">
